@@ -1,9 +1,9 @@
 abstract class SearchZipCodeState {}
 
-class SearchZipCodeSucces implements SearchZipCodeState {
+class SearchZipCodeSuccess implements SearchZipCodeState {
   final  Map data;
 
-   SearchZipCodeSucces(this.data);
+   SearchZipCodeSuccess(this.data);
 }
 
 class SearchZipCodeLoading implements SearchZipCodeState {

@@ -26,7 +26,7 @@ class HomeController {
           ));
     }
 
-    state = state as SearchZipCodeSucces;
+    state = state as SearchZipCodeSuccess;
 
     if (state.data.isEmpty) {
       return Container(

@@ -7,7 +7,7 @@ import 'search_zipcode_state.dart';
 class SearchZipCodeBloc extends Bloc<String, SearchZipCodeState> {
   final Dio dio;
 
-  SearchZipCodeBloc(this.dio) : super(SearchZipCodeSucces({}));
+  SearchZipCodeBloc(this.dio) : super(SearchZipCodeSuccess({}));
   @override
   Stream<SearchZipCodeState> mapEventToState(String cep) async* {
     String url = "https://viacep.com.br/ws/$cep/json/";
@@ -15,7 +15,7 @@ class SearchZipCodeBloc extends Bloc<String, SearchZipCodeState> {
     try {
       final respose = await dio.get(url);
 
-      yield SearchZipCodeSucces(respose.data);
+      yield SearchZipCodeSuccess(respose.data);
     } catch (e) {
       yield const SearchZipCodeError("Error search zip code " );
     }

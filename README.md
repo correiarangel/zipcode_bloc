@@ -6,6 +6,7 @@
 <br><br>
 
 # zipcode_bloc
+#### Developed with unit test 
 
 Zip code search retorns city state population
 
@@ -13,6 +14,7 @@ This project is a starting point for a Flutter application.
 
 Application search zip code using viacep api https://viacep.com.br/ .
 Implied in a BLoc class taught by Fluterrando
+
 
 ### To run  
 

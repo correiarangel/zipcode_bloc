@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
-import 'package:zipcode_bloc/app/page/blocs/search_zipcode_bolc.dart';
+import 'page/blocs/search_zipcode_bolc.dart';
 import 'package:zipcode_bloc/app/page/home_page.dart';
 
 class AppWidGet extends StatelessWidget {
@@ -21,6 +21,7 @@ class AppWidGet extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
+      debugShowCheckedModeBanner: false,
       home: const HomePage(),
     ),);
 
